@@ -31,11 +31,13 @@ header span {
     padding: 60px 0;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center; /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
 }
 
 .main-section .wrapper {
     display: flex;
+    justify-content: center;
     align-items: center;
     /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
 }
@@ -69,7 +71,7 @@ header span {
     /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
     display: flex;
     flex-direction: column;
-    gap: 60px
+    gap: 60px;
 }
 
 select {
@@ -87,7 +89,8 @@ select {
 
 select:hover,
 .text-field:hover {
-border: 1px solid #2965f1;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
     /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
 }
 
@@ -96,6 +99,7 @@ border: 1px solid #2965f1;
     /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
     /* flex-direction: column; */
     display: flex;
+    flex-direction: row;
 }
 
 .section-title {
@@ -134,6 +138,7 @@ border: 1px solid #2965f1;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    min-width: 50%;
     /* 📍 Свойства flexbox для расположения элементов с классом .label */
 }
 
@@ -176,7 +181,7 @@ form {
 }
 
 .btn:hover {
-    background: hsla(222, 88%, 55%, 0.9);
+    background-color: rgba(41, 101, 241, 0.9);
     cursor: pointer;
     /* 📍 Стили для кнопки при наведении курсора */
 }
